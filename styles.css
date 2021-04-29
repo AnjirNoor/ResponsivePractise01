@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.125rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    color: #707070;
+}
+
+/** will apply from 0px upto 450px **/
+@media (max-width:600px) {
+    html {
+        font-size: .85rem;
+    }
+    
+}
+
+
+/* Typography */
+span {
+    color: #b7832f;
+}
+
+h1 {
+    font-size: 2.55rem;
+    color: #212614;
+    text-align: center;
+   
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    
+}
+
+p {
+    margin-top: 0;
+    line-height: 30px;
+   
+}
+
+
+
+/* layout */
+.container {
+    width: 90%;
+    margin:0 auto;
+    max-width: 980px;
+}
+
+img {
+    width: 100%;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em 0;
+}
+@media (max-width:800px) {
+    .columns  {
+        flex-direction: column;
+    }
+}
+
+.col-bg {
+    background-color: #312614;
+    color: #fff;
+}
+.col-bg p {
+    padding: 1.05em ;
+}
+.col-1 {
+    width: 23%;
+}
+
+.col-2 {
+    width: 46%;
+}
+
+.col-3 {
+    width: 73%;
+}
+
+@media (max-width:800px) {
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}
